@@ -1,0 +1,30 @@
+{
+  "name": "worthyourweight",
+  "version": "1.0.0",
+  "description": "find out your worth in in different commodities ",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "clear && node test/**/*.js |tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamAwesomeEDA12345/worthyourweight.git"
+  },
+  "keywords": [
+    "commodities",
+    "weight"
+  ],
+  "author": "Oliver Stigley, Uili, Shayan, Hape, Lauren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeamAwesomeEDA12345/worthyourweight/issues"
+  },
+  "homepage": "https://github.com/TeamAwesomeEDA12345/worthyourweight#readme",
+  "devDependencies": {
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1"
+  }
+}
