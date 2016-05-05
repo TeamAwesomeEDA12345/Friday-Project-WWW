@@ -9,6 +9,7 @@ test("test database is read and returned", function(t){
     if(err) {
       throw err
     } else {
+      console.log(database)
       t.deepEqual(database, expected, "Database is returned")
     }
   })
