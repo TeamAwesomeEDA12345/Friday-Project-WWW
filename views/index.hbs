@@ -1,7 +1,7 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
 
-//form for user input of name and weight
+<!-- form for user input of name and weight -->
 <form method="post" action="/">
 
   <input type="text" name="name" placeholder="Enter your name here...">
@@ -9,13 +9,21 @@
   <input type="submit" value="submit" >
 
 </form>
-  <p>Your name: {{name}}</p>
-  <p>your weight: {{weight}}</p>
-  <p>Your worth: {{worth}}</p>
 
-  //previous users display
+
+<!-- previous users display -->
+
+<p>Everyones value in gold</p>
     <ul>
   {{#each worths}}
-  <a href="/"><li> {{name}} </li></a>
+  <a href="/"><li> {{name}}, ${{value}} </li></a>
   {{/each}}
     </ul>
+
+<!-- edit current user weight -->
+<form>
+
+  <input type= "text" name = "editWeight" placeholder = "Edit weight here...">
+  <input type="submit" value="submit" >
+
+</form>

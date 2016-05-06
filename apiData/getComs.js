@@ -9,12 +9,11 @@ module.exports = function (commodity, doThisWithCom) {
       var apiGoldData = parsedData.dataset.data
 
       var goldData = {'gold': []}
-      var salmonData = {'salmon': []}
 
         for (var i =0; i<apiGoldData.length; i++){
           goldData["gold"].push({date: apiGoldData[i][0],price: apiGoldData[i][1] * 32 })
         }
-      doThisWithCom(err, goldData, salmonData)
+      doThisWithCom(err, goldData)
     } else {
       doThisWithCom(err)
     }
